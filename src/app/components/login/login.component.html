@@ -1,0 +1,39 @@
+<table cellspacing="10" align="center">
+    <tr>
+        <td colspan="2"><p>Вход:</p></td>
+
+    </tr>
+    <tr>
+        <td>
+            <label for="email">Введите email:</label>
+        </td>
+        <td>
+            <input  matInput id="email" [(ngModel)]="email" placeholder='admin'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="password">Введите пароль:</label>
+        </td>
+        <td>
+            <input  matInput id="password" [(ngModel)]="password" placeholder='admin'>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+                <p>
+                    <button mat-button (click)="Enter(email, password)">Войти</button>
+                </p>
+        </td>
+    </tr>
+    <tr *ngIf=" error == -1 ">
+      <td colspan="2">
+        <p><font size="3" color="red" face="Arial">Введены неверные данные</font></p>
+      </td>
+    </tr>
+    <tr>
+            <td colspan="2">
+                    <a href="/reg">Зарегистрироваться</a>
+            </td>
+        </tr>
+</table>

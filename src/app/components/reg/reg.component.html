@@ -1,0 +1,36 @@
+<table cellspacing="10" align="center">
+  <tr>
+        <td colspan="2"><p>Регистрация:</p></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="name">Введите email:</label>
+        </td>
+        <td>
+            <input  matInput id="email" [(ngModel)]="email" placeholder='admin@mail.ru'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="login">Введите логин:</label>
+        </td>
+        <td>
+            <input  matInput id="login" [(ngModel)]="login" placeholder='admin'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="password">Введите пароль:</label>
+        </td>
+        <td>
+            <input type="password"  matInput id="password" [(ngModel)]="password" placeholder='admin'>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+                <p>
+                    <button mat-button (click)="registration(email, login, password)">Зарегистрироваться</button>
+                </p>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,63 @@
+<mat-toolbar color="primary" style="flex-direction: row; box-sizing: border-box; display: flex; background: #1e88e5;">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">
+      <img alt="homepage" class="dark-logo" src="assets/images/drake-logo.png">
+    <span fxshow="false" fxshow.gt-xs="" style="display: none;">
+      <img alt="homepage" class="dark-logo" src="assets/images/drake.png">
+    </span>
+    </a>
+  </div>
+  <button mat-icon-button="" value="sidebarclosed" data-vivaldi-spatnav-clickable="1" class="mat-icon-button">
+    <span class="mat-button-wrapper">
+      <mat-icon class="mat-icon material-icons mat-icon-no-color" role="img" aria-hidden="true">menu</mat-icon>
+    </span>
+    <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+    <div class="mat-button-focus-overlay"></div>
+  </button>
+  <button class="srh-btn mat-icon-button" mat-icon-button="" data-vivaldi-spatnav-clickable="1">
+      <span class="mat-button-wrapper">
+        <mat-icon class="mat-icon material-icons mat-icon-no-color" role="img" aria-hidden="true">search</mat-icon>
+      </span>
+      <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+      <div class="mat-button-focus-overlay"></div>
+    </button>
+
+    <form class="app-search ng-untouched ng-pristine ng-valid" novalidate="">
+        <input class="form-control" placeholder="Search &amp; enter" type="text">
+        <a class="cl-srh-btn" data-vivaldi-spatnav-clickable="1">
+          <i class="ti-close"></i>
+        </a>
+      </form>
+      <span fxflex="" style="flex: 1 1 0%; box-sizing: border-box;">
+      </span>
+      <button aria-haspopup="true" class="m-r-10 mat-icon-button" mat-icon-button="" data-vivaldi-spatnav-clickable="1">
+          <span class="mat-button-wrapper">
+            <mat-icon class="mat-icon material-icons mat-icon-no-color" role="img" aria-hidden="true">message</mat-icon>
+            <div class="notify">
+              <span class="heartbit"></span>
+              <span class="point"></span>
+            </div>
+          </span>
+          <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+          <div class="mat-button-focus-overlay"></div>
+        </button>
+        <mat-menu class=""><!----></mat-menu>
+        <button aria-haspopup="true" class="m-r-5 mat-icon-button" mat-icon-button="" data-vivaldi-spatnav-clickable="1">
+          <span class="mat-button-wrapper">
+            <img alt="user" class="profile-pic" src="assets/images/lizzka.png"></span>
+            <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+            <div class="mat-button-focus-overlay"></div>
+          </button>
+          <mat-menu class=""><!----></mat-menu>
+        <button class="ml-xs overflow-visible mat-icon-button" mat-icon-button="" data-vivaldi-spatnav-clickable="1">
+          <span class="mat-button-wrapper">
+            <mat-icon class="mat-icon material-icons mat-icon-no-color" role="img" aria-hidden="true">settings</mat-icon>
+          </span>
+          <div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div>
+          <div class="mat-button-focus-overlay"></div>
+        </button>
+</mat-toolbar>
+
+
+
+<router-outlet></router-outlet>

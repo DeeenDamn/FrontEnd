@@ -1,0 +1,15 @@
+div{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    background: burlywood;
+}
+a{
+    color: black; 
+    text-decoration: none; 
+    font: 16pt menu;
+}
+

@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <a routerLink='/reg'>Blablabla</a>
+  </mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>
+<ul>
+  <li *ngFor="let item of data">
+    {{item.email}} {{item.login}}
+  </li>
+</ul>
+

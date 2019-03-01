@@ -1,0 +1,36 @@
+p{
+    font: 16pt menu;
+    text-align: center;
+}
+
+table{
+    background: #eeeeee;
+	width: 400px;
+	height: 185px;
+	border: solid white;
+	border-radius: 1.5em;
+	border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+}
+
+label{
+    font: 13pt menu;
+}
+input{
+    font:13pt menu;
+    border-radius: 5px;
+    width: 130px;
+}
+
+button{
+    vertical-align: top;
+	background: #a3b2ff;
+	border: solid #a3b2ff;
+	border-radius: 3px;
+	border-collapse: collapse;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+}
