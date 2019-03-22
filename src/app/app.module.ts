@@ -11,12 +11,14 @@ import { LoginComponent } from './components/login/login.component';
 import { RegComponent } from './components/reg/reg.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserviewComponent } from './components/userview/userview.component';
+import { OrganizationComponent } from './organization/organization.component';
 
 
 const appRoutes: Routes = [
   { path: 'reg', component: RegComponent},
   { path: 'log', component: LoginComponent},
-  { path: 'user', component: UserviewComponent}
+  { path: 'user', component: UserviewComponent},
+  { path: 'user/org', component: OrganizationComponent}
 ];
 
 @NgModule({
@@ -25,6 +27,7 @@ const appRoutes: Routes = [
   LoginComponent,
   RegComponent,
   UserviewComponent,
+  OrganizationComponent,
   ],
   imports: [
   BrowserModule,

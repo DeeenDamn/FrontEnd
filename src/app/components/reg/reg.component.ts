@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from '../../User';
 import { HttpService } from '../http/http.service';
+import {routerNgProbeToken} from "@angular/router/src/router_module";
 
 @Component({
   selector: 'app-reg',
@@ -15,13 +16,11 @@ export class RegComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  registration(email1, login1, password1): void {
-    this.httpService.post('http://localhost:1111/users/registration', {
-      login : login1,
+  registration(email1, password1): void {
+    this.httpService.post('/users', {
       email: email1,
       password: password1,
-      verify: false,
-      roles: ['USER']
+      verify: false
     }).subscribe(data => {
       console.log(data);
     },

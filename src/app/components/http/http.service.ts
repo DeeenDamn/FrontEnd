@@ -8,11 +8,9 @@ import {Observable} from 'rxjs';
 })
 export class HttpService {
   data: any = {};
-  httpHeader = {
-    headers: new HttpHeaders( {'Content-type': 'application/json'})
-  };
+  myHeaders = new HttpHeaders().set('Content-type', 'application/json');
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   get(): any {
     this.http.get('http://localhost:1111/users/2').subscribe(
@@ -24,10 +22,10 @@ export class HttpService {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('http://localhost:1111/main');
+    return this.http.get('/users');
   }
 
   post(url: string, body: any ): Observable<any> {
-    return this.http.post(url, body, this.httpHeader);
+    return this.http.post(url, body, {headers: this.myHeaders});
   }
 }
